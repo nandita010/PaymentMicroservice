@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface PaymentRepo extends JpaRepository<Payment, Integer> {
 
+
     List<Payment> findByPaymentMethod(String paymentMethod);
 
 }

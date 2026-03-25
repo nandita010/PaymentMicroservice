@@ -16,13 +16,12 @@ public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotBlank
+
     private boolean paid;
 
     @NotBlank(message="Payment method is required")
     private String paymentMethod;
 
     private long reservationId;
-
 
 }
